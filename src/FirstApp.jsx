@@ -1,14 +1,9 @@
 import PropTypes from 'prop-types'
-const msg = { name: 'Felipe' }
-
-const sendMessage = () => {
-  return msg.name
-}
 
 export const FirstApp = ({ title, subTitle, name }) => {
   return (
     <>
-      <h1>{title}</h1>
+      <h1 data-testid="test-title">{title}</h1>
       <h2>{subTitle}</h2>
       <h3>{name}</h3>
       <p>
@@ -17,7 +12,6 @@ export const FirstApp = ({ title, subTitle, name }) => {
         consequuntur eaque consequatur numquam iste itaque cupiditate odio
         repudiandae, ab ipsa eveniet ducimus.
       </p>
-      {sendMessage()}
     </>
   )
 }
@@ -30,5 +24,5 @@ FirstApp.propTypes = {
 FirstApp.defaultProps = {
   name: 'Felipe Navas',
   subTitle: 'No subtitle',
-  title: 'No title',
+  // title: 'No title',
 }

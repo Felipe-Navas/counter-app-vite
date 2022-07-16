@@ -4,7 +4,7 @@ describe('Testing the 11-async-await', () => {
   test('should return an image URL', async() => {
 
     const url = await getImagen()
-    console.log(url)
+    // console.log(url)
     expect(typeof url).toBe('string')
   })
  })
